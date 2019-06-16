@@ -8,7 +8,7 @@ int main(int argc, char **argv)
 {
     consoleInit(NULL);
 
-    printf("\x1b[16;16HPress PLUS to exit.");
+   
 
     // Main loop
     while(appletMainLoop())
@@ -21,11 +21,7 @@ int main(int argc, char **argv)
 
         if (kDown & KEY_PLUS) break; // break in order to return to hbmenu
 
-
-        
-
-        printf("Hello Switch~");
-        
+         printf("\x1b[16;16HHello Switch~        Press PLUS to exit.");
 
         consoleUpdate(NULL);
     }
